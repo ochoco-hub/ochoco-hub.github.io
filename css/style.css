@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  margin: 2rem auto;
+  max-width: 1200px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf6f8;
+  color: #4b2f34;
+  padding: 0 2rem;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  position: relative;
+  z-index: 0;
+  padding: 5em 1em 3em;
+  text-align: center;
+  margin-bottom: 2rem;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #f6c3d3;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/header-background.jpg') center/cover no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 8rem;
+  color: #5a1f3d;
+  margin: 0;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.9);
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0.5em;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background: #ffe3ed;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #53162e;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.header nav a:hover {
+  color: #b01654;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f0c4cc;
+  padding: 3em 2em;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-artist, .work-background {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+.about img, .work-background img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.75rem;
+  border: 3px solid #b95a75;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #f3b6c4;
+  padding: 3em 2em;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.portfolio-section, .flash-section {
+  flex: 1 1 300px;
+  margin: 1em;
+  text-align: center;
+}
+
+
+.slider {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 100%;
+  padding: 1rem 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.slide-container img {
+  max-width: 85%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 2px solid #a73956;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.slider button {
+  padding: 0.75rem 1.5rem;
+  background-color: #db5d89;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  transition: background 0.3s;
+}
+
+.slider button:hover {
+  background-color: #a73956;
+}
+
+
+.social {
+  background-color: #e6a5b9;
+  padding: 2em;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.icons img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #5a1f3d;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  color: #4b2f34;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+
+  .header nav a {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riri's Ink Blots</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Riri's Ink Blots</h1>
+  <section class="navbar" id="navigation">
+    <nav>
+      <ul>
+        <li><a href="#about">About the Artist</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </section>
+ </header>
+
+
+  <section class="about" id="about">
+    <div class="about-artist">
+      <h2>About the Artist</h2>
+      <img src="images/artist-photo.jpg" alt="Artist by the lake" />
+      <p><strong>Hi! I am Arianne Beyetah Ochoco, 23 years old, and a self-taught tattoo artist based in Baguio City. I am currently studying in the University of the Cordilleras taking up BMMA which stands for Bachelor of Multimedia Arts. </strong></p>
+    </div>
+    <div class="work-background">
+      <h2> Work Background</h2>
+      <img src="images/tattoo-sample.jpg" alt="Tattoo sample" />
+      <p><strong>I always had an interest in tattooing. When I was 20 years old, my dad bought me my first tattoo machine, and that's when I started to hone my craft.</strong></p>
+    </div>
+  </section>
+
+<div class="portfolio-wrapper">
+  <section class="portfolio-section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="slider">
+      <button class="prev" onclick="changeSlide(-1, 'portfolio')">&#10094;</button>
+      <div class="slide-container" id="portfolio">
+        <img class="slide" src="images/portfolio1.jpg" alt="Portfolio 1">
+        <img class="slide" src="images/portfolio2.jpg" alt="Portfolio 2">
+        <img class="slide" src="images/portfolio3.jpg" alt="Portfolio 3">
+      </div>
+      <button class="next" onclick="changeSlide(1, 'portfolio')">&#10095;</button>
+  </section>
+
+  <section class="flash-section" id="flash">
+    <h2>Flash Tattoo Designs</h2>
+    <div class="slider">
+      <button class="prev" onclick="changeSlide(-1, 'flash')">&#10094;</button>
+      <div class="slide-container" id="flash">
+        <img class="slide" src="images/flash1.jpg" alt="Flash Tattoo 1">
+        <img class="slide" src="images/flash2.jpg" alt="Flash Tattoo 2">
+        <img class="slide" src="images/flash3.jpg" alt="Flash Tattoo 3">
+      </div>
+      <button class="next" onclick="changeSlide(1, 'flash')">&#10095;</button>
+  </section>
+</div>
+
+  <section class="social" id="contact">
+    <h2>Social Media Accounts</h2>
+	<p></p>
+	<p>Contact me on any of these platforms to book your tattoo session now!</p>
+    <div class="icons">
+      <a href="#"><img src="images/icon-facebook.jpg" alt="Facebook" /></a>
+	<br>
+	<p>Arianne Beyetah Ochoco</p>
+      <a href="#"><img src="images/icon-instagram.jpg" alt="Instagram" /></a>
+	<br>
+	<p>@heyaaaitsarii</p>
+      <a href="#"><img src="images/icon-twitter.png" alt="Twitter" /></a>
+	<br>
+	<p>@HeyaaaItsArii</p>
+      <a href="#"><img src="images/icon-email.jpg" alt="Email" /></a>
+	<br>
+	<p>yanyanpriv@gmail.com</p>
+      <a href="#"><img src="images/icon-phone.png" alt="Phone" /></a>
+	<br>
+	<p>09123456789</p>
+
+    </div>
+  </section>
+</body>
+</html>
